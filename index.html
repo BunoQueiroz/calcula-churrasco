@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/tags.css">
+    <title>Calculadora de Churrasco</title>
+</head>
+<body>
+    <main>
+        <h1 class="text-center text-primary">Calculadora de Churrasco</h1>
+        <h3 class="text-center text-secondary">
+            Informe a quantidade de homens, mulheres e criaças que participarão do churrasco
+        </h3>
+        <section class="d-flex flex-wrap">
+            <div class="container">
+                <form>
+                    <h3 class="text-tertiary">Informe a quantidade</h3>
+                    <div class="d-flex flex-wrap">
+                        <label class="text-primary fw-bold" for="mens">Total de homens</label>
+                        <input class="input-format" type="number" id="mens" min="0">
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <label class="text-primary fw-bold" for="womens">Total de mulheres</label>
+                        <input class="input-format" type="number" id="womens" min="0">
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <label class="text-primary fw-bold" for="childrens">Total de criaças</label>
+                        <input class="input-format" type="number" id="childrens" min="0">
+                    </div>
+                    <button class="btn btn-primary fw-bold bg-none" type="button" id="buttonCalc">Calcular</button>
+                </form>
+            </div>
+            <div class="container container-table">
+                <h3 class="text-center text-tertiary">Tabela de valores</h3>
+                <table class="text-primary fw-bold">
+                    <thead>
+                        <tr class="tr">
+                            <th></th>
+                            <th>Homens</th>
+                            <th>Mulheres</th>
+                            <th>Criaças</th>
+                            <th class="text-secondary">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Carne bovida</th>
+                            <td><span contenteditable="true">500</span>g</td>
+                            <td><span contenteditable="true">300</span>g</td>
+                            <td><span contenteditable="true">200</span>g</td>
+                            <td class="text-secondary" id="totalCarneBovina"></td>
+                        </tr>
+                        <tr>
+                            <th>Frango</th>
+                            <td><span contenteditable="true">200</span>g</td>
+                            <td><span contenteditable="true">200</span>g</td>
+                            <td><span contenteditable="true">100</span>g</td>
+                            <td class="text-secondary" id="totalFrango"></td>
+                        </tr>
+                        <tr>
+                            <th>Linguiça</th>
+                            <td><span contenteditable="true">200</span>g</td>
+                            <td><span contenteditable="true">200</span>g</td>
+                            <td><span contenteditable="true">200</span>g</td>
+                            <td class="text-secondary" id="totalLinguica"></td>
+                        </tr>
+                        <tr>
+                            <th>Refrigerante</th>
+                            <td><span contenteditable="true">300</span>ml</td>
+                            <td><span contenteditable="true">400</span>ml</td>
+                            <td><span contenteditable="true">200</span>ml</td>
+                            <td class="text-secondary" id="totalRefri"></td>
+                        </tr>
+                        <tr>
+                            <th>Cerveja</th>
+                            <td><span contenteditable="true">800</span>ml</td>
+                            <td><span contenteditable="true">500</span>ml</td>
+                            <td><span contenteditable="true" type="number">0</span>ml</td>
+                            <td class="text-secondary" id="totalCerveja"></td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
