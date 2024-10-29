@@ -1,0 +1,6 @@
+videos/*
+videos/
+.dockerignore
+.git/
+.git/*
+.git
